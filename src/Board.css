@@ -1,0 +1,52 @@
+.sudoku {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-collapse: collapse;
+}
+.sudoku_row {
+    margin: 0px;
+    padding: 0px;
+}
+.sudoku_row:nth-child(3n) {
+    border-bottom: 2px solid black;
+}
+.sudoku_cell {
+    height: 32px;
+    width: 32px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+.sudoku_cell:nth-child(3n) {
+    border-right: 2px solid black;
+}
+.sudoku_cell input {
+    color: #000;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+}
+.sudoku_cell.duplicate input {
+    color: #f00;
+}
+.solve-button {
+    margin-top: 2px;
+}
+
+.selector-div {
+    padding: 2px;
+  }
+  .message-div {
+    padding: 2px;
+    color: #000;
+  }
+  .error-div {
+    padding: 2px;
+    color: #f00;
+    font-weight: bold;
+  }
